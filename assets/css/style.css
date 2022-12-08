@@ -231,9 +231,10 @@ h6 {
 }
 
 .navbar .dropdown ul {
-  display: block;
+  display: flex;
+flex-direction: column;
   position: absolute;
-  left: 30px;
+  /* left: 30px; */
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -245,10 +246,17 @@ h6 {
   transition: 0.3s;
   border-radius: 4px;
 }
+#dropdown1 ul li{
+  position: relative;
+  display:flex;
+  flex:0 20%;
+  align-items:center;
 
-.navbar .dropdown ul li {
-  min-width: 200px;
 }
+
+/* .navbar .dropdown ul li {
+  min-width: 200px;
+} */
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
@@ -1512,7 +1520,7 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
-.events .card {
+/* .events .card {
   border: 0;
   padding: 0 30px;
   margin-bottom: 60px;
@@ -1579,7 +1587,7 @@ section {
 
 .events .card:hover .card-body .card-title a {
   color: #5fcf80;
-}
+} */
 
 /*--------------------------------------------------------------
 # Pricing
@@ -2082,3 +2090,82 @@ footer.style-1 .footer-link li {
 } */
 
 
+/* halaman 2 */
+.container-content {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+/* .container-content img {
+  width: 80%;
+} */
+.kuliner {
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 300px;
+  height: 60px;
+  background-color: #334960;
+  border-radius: 5px;
+  text-align: center;
+}
+.kuliner h4 {
+  text-transform: uppercase;
+  padding-top: 13px;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+.sub-kuliner {
+  width: 900px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.sub-kuliner p{
+  text-align: justify;
+  font-weight: 600;
+  font-family: "Raleway" ,sans-serif;
+}
+.ketentuan {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 205px;
+  background-color:#334960;
+  border-radius: 5px;
+}
+.ketentuan h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  color: whitesmoke;
+}
+.ketentuan ol{
+  font-family: "Poppins", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: whitesmoke;
+  font-size: 17px;
+  text-align: justify;
+
+  
+}
+.container .card {
+  background-color: #334960;
+}
+.container .card a{
+  color: whitesmoke;
+  padding: 10px;
+  font-size: 18px;
+}
+.container .card a:hover{
+  color: #18d26e;
+}
+.container .card img{
+  height: 70%;
+  
+}
+#kuliner-ada .section-title{
+  margin: 20px;
+}
+#kuliner-ada .section-title h3{
+  margin-left: 200px;
+}
